@@ -6,26 +6,24 @@
         {
             //Create a menu of choices
             int answer= 0;
-            while(answer !=5)
+            while (answer != 5)
             {
-                
-                
-                
 
 
-                    Console.WriteLine("Hello User, Welcome to The Game. Insert an applicable # to navigate the menu");
 
-                    Console.WriteLine("|----------------------|");
-                    Console.WriteLine("1-New Game");
-                    Console.WriteLine("2-Load Game");
-                    Console.WriteLine("3-Options");
-                    Console.WriteLine("4-Credits");
-                    Console.WriteLine("5-Exit");
-                    Console.WriteLine("|----------------------|");
-                    answer = int.Parse(Console.ReadLine());
 
-                    while (answer < 1 || answer > 6)
-                    
+
+                Console.WriteLine("Hello User, Welcome to The Game. Insert an applicable # to navigate the menu");
+
+                Console.WriteLine("|----------------------|");
+                Console.WriteLine("1-New Game");
+                Console.WriteLine("2-Load Game");
+                Console.WriteLine("3-Options");
+                Console.WriteLine("4-Credits");
+                Console.WriteLine("5-Exit");
+                Console.WriteLine("|----------------------|");
+                answer = int.Parse(Console.ReadLine());                
+                {
 
                     //print response 1
                     if (answer == 1)
@@ -67,11 +65,12 @@
                     }
 
 
-            }
-            { 
-                if (answer == 5)
+                }
                 {
-                    Console.WriteLine("Thank you so much for playing my game... WAHOOO");
+                    if (answer == 5)
+                    {
+                        Console.WriteLine("Thank you so much for playing my game... WAHOOO");
+                    }
                 }
             }
 
